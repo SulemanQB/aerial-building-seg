@@ -1,0 +1,21 @@
+{
+  "experiment": "pretrained_smoke",
+  "model": "U-Net with ImageNet-pretrained ResNet-34 encoder",
+  "dataset": "INRIA capped subset",
+  "source_images": 12,
+  "device": "cpu",
+  "epochs": 1,
+  "max_train_tiles": 256,
+  "checkpoint_selection": {
+    "tiles": 64,
+    "dice": 0.547107375754809,
+    "iou": 0.4107687846763211,
+    "note": "Validation cap used while training. Checkpoint was selected on this set."
+  },
+  "full_validation": {
+    "tiles": 2187,
+    "dice": 0.5524363899304321,
+    "iou": 0.4070554141476534,
+    "aggregation": "Unweighted mean of per-batch scores at batch size 4."
+  }
+}
